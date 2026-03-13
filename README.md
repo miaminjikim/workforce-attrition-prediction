@@ -89,6 +89,22 @@ The model was evaluated using standard classification metrics such as:
 
 While this is a simplified project using public data, it demonstrates how Python-based modeling can support workforce analytics beyond descriptive dashboards.
 
+--
+
+A logistic regression model was trained using standardized features within a scikit-learn pipeline.
+
+Model performance on the test dataset:
+
+- Accuracy: **81.5%**
+- ROC-AUC: **0.86**
+- Precision (Attrition class): **0.68**
+- Recall (Attrition class): **0.56**
+- F1-score (Attrition class): **0.61**
+
+The ROC-AUC score of 0.86 indicates that the model has strong ability to distinguish between employees who remain with the organization and those who leave.
+
+These results demonstrate how predictive models can complement traditional HR reporting by identifying patterns associated with workforce attrition risk.
+
 ## Repository Contents
 
 - `attrition_prediction.ipynb` — main notebook
