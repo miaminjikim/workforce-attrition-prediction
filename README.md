@@ -3,39 +3,34 @@ Python project using machine learning to predict workforce attrition from struct
 
 # Workforce Attrition Prediction
 
-This project uses Python and machine learning to predict employee attrition based on structured workforce-related data. The goal is to move beyond descriptive analytics and explore how predictive modeling can support workforce planning and retention analysis.
+## Overview
 
-## Project Overview
+Employee attrition is a critical challenge for organizations because losing experienced employees can lead to increased recruitment costs, loss of expertise, and reduced productivity.
 
-In many organizations, dashboards can summarize historical trends such as turnover, tenure, and employee characteristics. However, these descriptive tools often do not answer forward-looking questions, such as which employees are at greater risk of attrition. This project applies a supervised machine learning workflow to model attrition risk using a public dataset.
+This project develops a machine learning model to predict employee attrition using the IBM HR Analytics dataset. The goal is to identify key factors that contribute to employee turnover and help organizations take proactive steps to improve retention.
 
-## Objective
-
-The objective of this project is to:
-
-- clean and prepare workforce-style tabular data
-- explore patterns associated with attrition
-- build a predictive model in Python
-- evaluate model performance
-- identify variables most associated with attrition
+The analysis applies Logistic Regression and Random Forest models to classify whether an employee is likely to leave the company.
 
 ## Dataset
 
-This project uses the IBM HR Analytics/Employee Attrition dataset, publicly available on Kaggle.
+The dataset used in this project is the IBM HR Analytics Employee Attrition Dataset.
 
-Dataset source:
-[IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+It contains information about employee demographics, job characteristics, compensation, and work conditions.
+
 
 The dataset contains employee-level variables such as:
 
 - age
-- department
-- job role
+- overtime status
 - monthly income
+- attrition outcome (target variable)
+- job role
+- department
 - years at company
-- overtime
-- business travel
-- attrition outcome
+- job satisfaction
+
+Dataset source:
+[IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
 ## Tools and Libraries
 
