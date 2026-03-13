@@ -16,7 +16,7 @@ The analysis applies Logistic Regression and Random Forest models to classify wh
 The dataset used in this project is the IBM HR Analytics Employee Attrition Dataset.
 It contains information about employee demographics, job characteristics, compensation, and work conditions.
 
-The dataset contains employee-level variables such as:
+Key variables include:
 
 - age
 - overtime status
