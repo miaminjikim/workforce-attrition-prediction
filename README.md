@@ -81,29 +81,23 @@ These findings suggest that predictive analytics can complement traditional HR r
 
 ## Results
 
-The model was evaluated using standard classification metrics such as:
-
-- accuracy
-- confusion matrix
-- precision / recall
-
-While this is a simplified project using public data, it demonstrates how Python-based modeling can support workforce analytics beyond descriptive dashboards.
-
---
-
 A logistic regression model was trained using standardized features within a scikit-learn pipeline.
 
 Model performance on the test dataset:
 
-- Accuracy: **81.5%**
-- ROC-AUC: **0.86**
+- Accuracy: **89.1%**
+- ROC-AUC: **0.77**
 - Precision (Attrition class): **0.68**
-- Recall (Attrition class): **0.56**
-- F1-score (Attrition class): **0.61**
+- Recall (Attrition class): **0.33**
+- F1-score (Attrition class): **0.45**
 
-The ROC-AUC score of 0.86 indicates that the model has strong ability to distinguish between employees who remain with the organization and those who leave.
+The model performs strongly in identifying employees who remain with the organization. Predicting attrition is more challenging due to the smaller number of attrition cases in the dataset.
 
-These results demonstrate how predictive models can complement traditional HR reporting by identifying patterns associated with workforce attrition risk.
+The ROC-AUC score of 0.77 indicates that the model still demonstrates good ability to distinguish between employees who stay and those who leave.
+
+The lower recall for the attrition class reflects class imbalance in the dataset, which is common in workforce attrition prediction problems.
+
+These results demonstrate how predictive models can complement traditional HR reporting by identifying patterns associated with workforce attrition risk. 
 
 ## Repository Contents
 
