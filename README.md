@@ -59,7 +59,7 @@ The workflow for this project included:
 
 ## Model
 
-A logistic regression model was used as a baseline classifier to predict whether an employee would leave the organization.
+A logistic regression model was used as a baseline classifier to predict whether an employee would leave the organization. Logistic regression was used as a baseline model, while a Random Forest classifier was tested as a non-linear alternative.
 
 This model was selected because it is:
 
