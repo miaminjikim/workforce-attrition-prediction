@@ -7,7 +7,9 @@ Python project using machine learning to predict workforce attrition from struct
 
 Employee attrition is a critical challenge for organizations because losing experienced employees can lead to increased recruitment costs, loss of expertise, and reduced productivity.
 
-This project develops a machine learning model to predict employee attrition using the IBM HR Analytics dataset. The goal is to identify key factors that contribute to employee turnover and help organizations take proactive steps to improve retention.
+This project develops a machine learning model to predict employee attrition using the IBM HR Analytics dataset. 
+
+The goal is to identify key factors that contribute to employee turnover and help organizations take proactive steps to improve retention.
 
 The analysis applies Logistic Regression and Random Forest models to classify whether an employee is likely to leave the company.
 
