@@ -14,9 +14,7 @@ The analysis applies Logistic Regression and Random Forest models to classify wh
 ## Dataset
 
 The dataset used in this project is the IBM HR Analytics Employee Attrition Dataset.
-
 It contains information about employee demographics, job characteristics, compensation, and work conditions.
-
 
 The dataset contains employee-level variables such as:
 
@@ -32,25 +30,17 @@ The dataset contains employee-level variables such as:
 Dataset source:
 [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
-## Tools and Libraries
+## Project Workflow
 
-- Python
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
-
-## Methods
-
-The workflow for this project included:
+The analysis follows a standard machine learning workflow:
 
 1. Data loading and inspection
-2. Data cleaning and preprocessing
-3. Exploratory data analysis
-4. Encoding categorical variables
-5. Train-test split
-6. Logistic regression modeling
-7. Model evaluation using classification metrics
+2. Data preprocessing
+3. Feature Encoding
+4. Train-test split
+5. Model Training
+6. Model Evaluation
+7. Feature Importance Analysis
 
 ## Model
 
@@ -93,6 +83,14 @@ The ROC-AUC score of 0.77 indicates that the model still demonstrates good abili
 The lower recall for the attrition class reflects class imbalance in the dataset, which is common in workforce attrition prediction problems.
 
 These results demonstrate how predictive models can complement traditional HR reporting by identifying patterns associated with workforce attrition risk. 
+
+## Tools and Libraries
+
+- Python
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
 
 ## Repository Contents
 
