@@ -42,78 +42,102 @@ The analysis follows a standard machine learning workflow:
 6. Model Evaluation
 7. Feature Importance Analysis
 
-## Model
+## Models Implemented
 
-A logistic regression model was used as a baseline classifier to predict whether an employee would leave the organization. Logistic regression was used as a baseline model, while a Random Forest classifier was tested as a non-linear alternative.
+A logistic regression model was used as a baseline classifier, while a Random Forest classifier was tested as a non-linear alternative.
 
-This model was selected because it is:
+## Logistic Regression
 
-- interpretable
-- appropriate for binary classification
-- commonly used in attrition and retention analysis
+A logistic regression classifier was trained to predict employee attrition.
 
-## Key Findings
+To improve convergence and model stability, the pipeline includes:
+- StandardScaler
+- Logistic Regression (max_iter = 5000)
 
-Key variables associated with higher attrition included:
+Performance
+Accuracy: 0.89
 
-- overtime
-- lower tenure
-- certain job roles
-- lower monthly income
-- more frequent business travel
+Classification Report:
 
-These findings suggest that predictive analytics can complement traditional HR reporting by identifying patterns linked to retention risk.
+Class         | Precision	| Recall	| F1-score
+No Attrition	| 0.91	    | 0.98	  | 0.94
+Attrition	    | 0.68	    | 0.33	  | 0.45
 
-## Results
+The model performs well for predicting employees who remain in the company, though recall for attrition cases is lower due to class imbalance in the dataset.
 
-A logistic regression model was trained using standardized features within a scikit-learn pipeline.
+## Random Forest
 
-Model performance on the test dataset:
+A Random Forest classifier was trained to capture potential nonlinear relationships between features and employee attrition.
 
-- Accuracy: **89.1%**
-- ROC-AUC: **0.77**
-- Precision (Attrition class): **0.68**
-- Recall (Attrition class): **0.33**
-- F1-score (Attrition class): **0.45**
+Model parameters:
+- n_estimators = 200
+- random_state = 42
 
-The model performs strongly in identifying employees who remain with the organization. Predicting attrition is more challenging due to the smaller number of attrition cases in the dataset.
+Performance
+Accuracy: 0.87
 
-The ROC-AUC score of 0.77 indicates that the model still demonstrates good ability to distinguish between employees who stay and those who leave.
+Although slightly lower than Logistic Regression in terms of accuracy, the Random Forest model provides useful insights through feature importance analysis.
 
-The lower recall for the attrition class reflects class imbalance in the dataset, which is common in workforce attrition prediction problems.
+## Model Comparison
 
-These results demonstrate how predictive models can complement traditional HR reporting by identifying patterns associated with workforce attrition risk. 
+Model	Accuracy
+Logistic Regression	0.89
+Random Forest	0.87
+
+Logistic Regression slightly outperformed Random Forest in this dataset.
+
+## ROC-AUC Evaluation
+
+ROC-AUC was used to evaluate the model's ability to distinguish between employees who leave and those who stay.
+
+ROC-AUC Score:
+0.77
+
+This indicates the model has a reasonable ability to discriminate between attrition and non-attrition cases.
+
+## Key Predictors of Attrition
+
+Feature importance analysis from the Random Forest model identified several important predictors of employee turnover:
+
+- Monthly Income
+- Overtime
+- Age
+- Daily Rate
+- Job-related compensation variables
+
+These factors suggest that workload, compensation, and employee demographics play important roles in employee retention.
 
 ## Tools and Libraries
 
 - Python
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
+- Pandas
+- Numpy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
 ## Repository Contents
 
 - `attrition_prediction.ipynb` — main notebook
 - `README.md` — project summary
-- `data/` — dataset file if included
-- `requirements.txt` — optional package list
+- `WA_Fn-UseC_-HR-Employee-Attrition.csv` — dataset file 
 
 ## Future Improvements
 
 Possible next steps include:
 
-- testing additional models such as random forest or XGBoost
-- performing feature selection
-- tuning hyperparameters
-- improving class imbalance handling
-- comparing interpretability versus predictive performance
+- Handling class imbalance using SMOTE
+- Testing additional models such as XGBoost
+- Hyperparameter tuning
+- Feature engineering
+- Cross-validation
+- Building a dashboard for HR decision-making
 
 ## Why I Built This Project
 
-My professional background in HR and workforce analytics has shown me that many organizational questions cannot be answered through reporting alone. I built this project to strengthen my technical skills in Python, statistical modeling, and machine learning, and to explore how predictive methods can support evidence-based workforce decision-making.
+My professional background in HR and workforce analytics has shown me that many organizational questions cannot be answered through reporting alone. I built this project to strengthen my technical skills in Python, statistical modeling, and machine learning, and to explore how predictive methods can support evidence-based workforce decision-making. This project was developed as part of my exploration of machine learning applications in workforce analytics and people data science.
 
 ## Author
 
 Minji Kim  
-GitHub: [your GitHub profile link]
+GitHub: [https://github.com/miaminjikim]
