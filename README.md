@@ -3,6 +3,10 @@ Machine learning project predicting employee attrition using Logistic Regression
 
 # Workforce Attrition Prediction
 
+This project builds machine learning models to predict employee attrition using HR analytics data.
+
+![Feature Importance](feature_importance.png)
+
 ## Overview
 
 Employee attrition is a critical challenge for organizations because losing experienced employees can lead to increased recruitment costs, loss of expertise, and reduced productivity.
