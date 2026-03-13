@@ -141,7 +141,7 @@ Possible next steps include:
 
 ## Why I Built This Project
 
-My professional background in HR and workforce analytics has shown me that many organizational questions cannot be answered through reporting alone. I built this project to strengthen my technical skills in Python, statistical modeling, and machine learning, and to explore how predictive methods can support evidence-based workforce decision-making. This project was developed as part of my exploration of machine learning applications in workforce analytics and people data science.
+This project was developed as part of my exploration of machine learning applications in workforce analytics and people data science.
 
 ## Author
 
