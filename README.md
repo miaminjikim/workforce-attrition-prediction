@@ -59,9 +59,15 @@ Accuracy: 0.89
 
 Classification Report:
 
-Class	Precision	Recall	F1-score
-No Attrition	0.91	0.98	0.94
-Attrition	0.68	0.33	0.45
+Class: No Attrition	
+Precision: 0.91	
+Recall: 0.98	
+F1-score: 0.94
+
+Class: Attrition	
+Precision: 0.68	
+Recall: 0.33	
+F1-score: 0.45
 
 The model performs well for predicting employees who remain in the company, though recall for attrition cases is lower due to class imbalance in the dataset.
 
