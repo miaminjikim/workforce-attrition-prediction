@@ -84,6 +84,13 @@ Accuracy: 0.87
 
 Although slightly lower than Logistic Regression in terms of accuracy, the Random Forest model provides useful insights through feature importance analysis.
 
+## Model Performance
+
+| Model | Accuracy | ROC-AUC |
+|------|------|------|
+Logistic Regression | 0.89 | 0.77 |
+Random Forest | 0.87 | — |
+
 ## Model Comparison
 
 Model	Accuracy
